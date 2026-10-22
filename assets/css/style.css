@@ -5510,6 +5510,27 @@ a.text-theme:hover,
   padding: 12px 0;
 }
 
+.header-top-home {
+  background-color: var(--theme-color);
+  padding-left: calc(var(--container-gutters) * 2);
+  padding-right: calc(var(--container-gutters) * 2);
+  .header-links li:not(:last-child)::after {
+    background-color: var(--white-color);
+  }
+  .header-links li:not(:last-child)::before {
+    background-color: var(--white-color);
+  }
+  .social-style1 .social-title::before {
+    background-color: var(--white-color);
+  }
+  .social-style1 .social-title::after {
+    background-color: var(--white-color);
+  }
+  .header-links li:hover i {
+    color: var(--title-color);
+  } 
+}
+
 .header-layout1 {
   position: absolute;
   width: 100%;
@@ -7781,6 +7802,9 @@ blockquote:before,
 .vs-hero .hero-title span {
   display: inline-block;
   color: var(--theme-color);
+}
+.vs-hero .hero-title .text-highlight-small {
+  font-size: 54px;
 }
 .vs-hero .hero-text {
   color: var(--white-color);
